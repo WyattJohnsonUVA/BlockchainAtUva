@@ -8,4 +8,6 @@ npm/nodejs
 html
 scss, css
 
-Make sure to run npm install to run locally
+Make sure to run "npm install" in terminal before running locally
+
+use "npm run dev" in terminal to start local host
