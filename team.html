@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+  <head>
+    <meta charset="utf-8">
+    <title>Blockchain @ UVA | Home</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Silicon - Multipurpose Technology Bootstrap Template">
+    <meta name="keywords" content="bootstrap, business, creative agency, mobile app showcase, saas, fintech, finance, online courses, software, medical, conference landing, services, e-commerce, shopping cart, multipurpose, shop, ui kit, marketing, seo, landing, blog, portfolio, html5, css3, javascript, gallery, slider, touch, creative">
+    <meta name="author" content="Createx Studio">
+
+    <!-- Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Theme switcher (color modes) -->
+    <script src="assets/js/theme-switcher.js"></script>
+
+    <!-- Favicon and Touch Icons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/BlockchainLogo.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/BlockchainLogo.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/BlockchainLogo.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#080032">
+    <meta name="msapplication-config" content="assets/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Vendor Styles -->
+    <link rel="stylesheet" media="screen" href="assets/vendor/boxicons/css/boxicons.min.css">
+    <link rel="stylesheet" media="screen" href="assets/vendor/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" media="screen" href="assets/vendor/lightgallery/css/lightgallery-bundle.min.css">
+
+    <!-- Main Theme Styles + Bootstrap -->
+    <link rel="stylesheet" media="screen" href="assets/css/theme.min.css">
+
+    <!-- Page loading styles -->
+    <style>
+      .page-loading {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        -webkit-transition: all .4s .2s ease-in-out;
+        transition: all .4s .2s ease-in-out;
+        background-color: #fff;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 9999;
+      }
+      [data-bs-theme="dark"] .page-loading {
+        background-color: #0b0f19;
+      }
+      .page-loading.active {
+        opacity: 1;
+        visibility: visible;
+      }
+      .page-loading-inner {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        -webkit-transition: opacity .2s ease-in-out;
+        transition: opacity .2s ease-in-out;
+        opacity: 0;
+      }
+      .page-loading.active > .page-loading-inner {
+        opacity: 1;
+      }
+      .page-loading-inner > span {
+        display: block;
+        font-size: 1rem;
+        font-weight: normal;
+        color: #9397ad;
+      }
+      [data-bs-theme="dark"] .page-loading-inner > span {
+        color: #fff;
+        opacity: .6;
+      }
+      .page-spinner {
+        display: inline-block;
+        width: 2.75rem;
+        height: 2.75rem;
+        margin-bottom: .75rem;
+        vertical-align: text-bottom;
+        border: .15em solid #b4b7c9;
+        border-right-color: transparent;
+        border-radius: 50%;
+        -webkit-animation: spinner .75s linear infinite;
+        animation: spinner .75s linear infinite;
+      }
+      [data-bs-theme="dark"] .page-spinner {
+        border-color: rgba(255,255,255,.4);
+        border-right-color: transparent;
+      }
+      @-webkit-keyframes spinner {
+        100% {
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+      @keyframes spinner {
+        100% {
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+
+    <!-- Page loading scripts -->
+    <script>
+      (function () {
+        window.onload = function () {
+          const preloader = document.querySelector('.page-loading');
+          preloader.classList.remove('active');
+          setTimeout(function () {
+            preloader.remove();
+          }, 1000);
+        };
+      })();
+    </script>
+  </head>
+
+
+  <!-- Body -->
+  <body>
+
+    <!-- Page loading spinner -->
+    <div class="page-loading active">
+      <div class="page-loading-inner">
+        <div class="page-spinner"></div><span>Loading...</span>
+      </div>
+    </div>
+
+
+    <!-- Page wrapper for sticky footer -->
+    <!-- Wraps everything except footer to push footer to the bottom of the page if there is little content -->
+    <main class="page-wrapper">
+
+
+      <!-- Navbar -->
+      <!-- Remove "navbar-sticky" class to make navigation bar scrollable with the page -->
+      <header class="header navbar navbar-expand-lg navbar-light position-absolute navbar-sticky">
+        <div class="container px-3">
+          <a href="index.html" class="navbar-brand pe-3">
+            <img src="assets/img/BlockchainLogo.png" width="75" alt="Silicon">
+            Blockchain @ UVA
+          </a>
+          <div id="navbarNav" class="offcanvas offcanvas-end bg-light">
+            <div class="offcanvas-header border-bottom border-dark">
+              <h5 class="offcanvas-title">Menu</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a href="" class="nav-link">Digital Assets</a>
+                </li>
+                <li class="nav-item">
+                  <a href="https://mirror.xyz/blockchainatuva.eth" class="nav-link">Research</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                  <a href="team.html" class="nav-link">Our Team</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <button type="button" class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </header>
+
+
+      <!-- Team -->
+      <section class="container position-relative mb-5 py-lg-3 py-xl-4 py-xxl-5">
+        <div class="d-md-flex align-items-center justify-content-between text-md-start text-center pt-1 pt-sm-3 pt-md-4 mb-5">
+          <h2 class="h1 mb-md-0 py-5">Our Team</h2>
+        </div>
+        <!-- Team grid -->
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 pb-lg-2 pb-xl-3">
+
+          <!-- Raye -->
+          <div class="col">
+            <div class="card card-hover border-0 bg-transparent">
+              <div class="position-relative">
+                <img src="assets/img/rayebio.png" class="rounded-3" alt="Ralph Edwards">
+                <div class="card-img-overlay d-flex flex-column align-items-center justify-content-center rounded-3">
+                </div>
+              </div>
+              <div class="card-body text-center p-3">
+                <h3 class="fs-lg fw-semibold pt-1 mb-2">Raye Hadi</h3>
+                <p class="fs-sm mb-0"><strong>President</strong></p>
+                <p class="fs-sm mb-0 py-4">Raye is a fourth-year student majoring in economics and minoring in computer science. Raye was introduced to blockchain and cryptocurrency in 2017 after reading the Bitcoin Standard. During the crypto wave of 2021 he got more involved, reading whitepapers, investing in tokens, and exploring defi applications. This interest prompted Raye to start the blockchain club at Virginia before the end of his third year. Some of Raye’s hobbies include working out, soccer, and hiking.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Austin -->
+          <div class="col">
+            <div class="card card-hover border-0 bg-transparent">
+              <div class="position-relative">
+                <img src="assets/img/austinbio.png" class="rounded-3" alt="Ralph Edwards">
+                <div class="card-img-overlay d-flex flex-column align-items-center justify-content-center rounded-3">
+                </div>
+              </div>
+              <div class="card-body text-center p-3">
+                <h3 class="fs-lg fw-semibold pt-1 mb-2">Austin Freimuth</h3>
+                <p class="fs-sm mb-0"><strong>Vice President</strong></p>
+                <p class="fs-sm mb-0 py-4">Austin is a current fourth-year studying Commerce. After being introduced to blockchain by a friend, Austin started doing research to understand it better and hasn't looked back since. His primary research interests include DAOs, self-sovereignty, and the convergence of AI and blockchain technologies. His hobbies are reading, working out, and hiking.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Yash -->
+          <div class="col">
+            <div class="card card-hover border-0 bg-transparent">
+              <div class="position-relative">
+                <img src="assets/img/yashbio.png" class="rounded-3" alt="Ralph Edwards">
+                <div class="card-img-overlay d-flex flex-column align-items-center justify-content-center rounded-3">
+                </div>
+              </div>
+              <div class="card-body text-center p-3">
+                <h3 class="fs-lg fw-semibold pt-1 mb-2">Yash Kolli</h3>
+                <p class="fs-sm mb-0"><strong>Co-Head of Software & Development</strong></p>
+                <p class="fs-sm mb-0 py-4">Yash is a fourth-year student studying computer science in the engineering school. During the crypto wave in 2021, Yash became interested in the world of blockchain, starting out by investing small amounts of money into tokens. Eventually, Yash dove deeper into blockchain tech, learning Solidity, Rust, etc. Yash recently just finished up a SWE internship at Coinbase. His hobbies include working out, watching sports, and playing poker.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Matt -->
+          <div class="col">
+            <div class="card card-hover border-0 bg-transparent">
+              <div class="position-relative">
+                <img src="assets/img/mattbio.png" class="rounded-3" alt="Ralph Edwards">
+                <div class="card-img-overlay d-flex flex-column align-items-center justify-content-center rounded-3">
+                </div>
+              </div>
+              <div class="card-body text-center p-3">
+                <h3 class="fs-lg fw-semibold pt-1 mb-2">Matthew Krill</h3>
+                <p class="fs-sm mb-0"><strong>Investment Fund Director</strong></p>
+                <p class="fs-sm mb-0 py-4">Matthew is a third year studying commerce, with concentrations in finance and computer science. He got into crypto as a growth prodcut manager at the blockchain service company, Nifty Bridge. Matthew's interests consist of trading strategies and deploying capital to a wide array of digital assets. His hobbies include participating in conferences and weight-lifting.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Rohan -->
+          <div class="col">
+            <div class="card card-hover border-0 bg-transparent">
+              <div class="position-relative">
+                <img src="assets/img/rohanbio.png" class="rounded-3" alt="Ralph Edwards">
+                <div class="card-img-overlay d-flex flex-column align-items-center justify-content-center rounded-3">
+                </div>
+              </div>
+              <div class="card-body text-center p-3">
+                <h3 class="fs-lg fw-semibold pt-1 mb-2">Rohan Suri</h3>
+                <p class="fs-sm mb-0"><strong>Co-Head of Software & Development</strong></p>
+                <p class="fs-sm mb-0 py-4">Rohan is a 3rd year pursuing a major in computer science and a minor in technology entrepreneurship. He first got introduced to blockchain and cryptocurrencies during the 2017 bull run and has been fascinated by the technology behind it ever since. Last summer Rohan interned at General Dynamics Information Technology, and outside of Blockchain at UVA, Rohan is involved in Alpha Kappa Psi Business Fraternity.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Zach -->
+          <div class="col">
+            <div class="card card-hover border-0 bg-transparent">
+              <div class="position-relative">
+                <img src="assets/img/zachbio.png" class="rounded-3" alt="Ralph Edwards">
+                <div class="card-img-overlay d-flex flex-column align-items-center justify-content-center rounded-3">
+                </div>
+              </div>
+              <div class="card-body text-center p-3">
+                <h3 class="fs-lg fw-semibold pt-1 mb-2">Zachary Campbell</h3>
+                <p class="fs-sm mb-0"><strong>Head of Research</strong></p>
+                <p class="fs-sm mb-0 py-4">Zach is a second-year in the College of Arts and Sciences double majoring in Economics and Statistics. He first became interested in cryptocurrency in high school after working with a Berlin-based venture capitalist on methods of risk-minimalization for crypto holdings. In his free time, you can find Zach cycling around Grounds, playing pickup basketball or reading in front of the Rotunda.</p>
+              </div>
+            </div>
+          </div>
+
+
+
+
+        </div>
+      </section>
+
+
+    <!-- Footer -->
+    <footer class="footer pt-5 pb-4 pb-lg-5">
+      <div class="container pt-lg-4">
+        <div class="row pb-5">
+          <div class="col-lg-4 col-md-6">
+            <div class="navbar-brand text-dark p-0 me-0 mb-3 mb-lg-4">
+              <img src="assets/img/BlockchainLogo.png" width="47" alt="Silicon">
+              Blockchain @ UVA
+            </div>
+            <p class="fs-sm pb-lg-3 mb-4">Our mission is to act as the point of introduction for any student interested in developing an understanding of blockchain technology. From general education to investment experience to facilitating industry engagement, we are the perfect club for any crypto-conscious Wahoo.</p>
+          </div>
+          <div class="col-xl-6 col-lg-7 col-md-5 offset-xl-2 offset-md-1 pt-4 pt-md-1 pt-lg-0">
+            <div id="footer-links" class="row">
+              <div class="col-lg-4">
+                <h6 class="mb-2">
+                  <a href="#useful-links" class="d-block text-dark dropdown-toggle d-lg-none py-2" data-bs-toggle="collapse">Useful Links</a>
+                </h6>
+                <div id="useful-links" class="collapse d-lg-block" data-bs-parent="#footer-links">
+                  <ul class="nav flex-column pb-lg-1 mb-lg-3">
+                    <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Home</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Digital Assets</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Research</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link d-inline-block px-0 pt-1 pb-2">About</a></li>
+                    <li class="nav-item"><a href="team.html" class="nav-link d-inline-block px-0 pt-1 pb-2">Our Team</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-xl-4 col-lg-3">
+                <h6 class="mb-2">
+                  <a href="#social-links" class="d-block text-dark dropdown-toggle d-lg-none py-2" data-bs-toggle="collapse">Socials</a>
+                </h6>
+                <div id="social-links" class="collapse d-lg-block" data-bs-parent="#footer-links">
+                  <ul class="nav flex-column mb-2 mb-lg-0">
+                    <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">LinkedIn</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Twitter</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Instagram</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-xl-4 col-lg-5 pt-2 pt-lg-0">
+                <h6 class="mb-2">Contact Us</h6>
+                <a href="mailto:blockchain@virginia.edu" class="fw-medium">blockchain@virginia.edu</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="nav d-block fs-xs text-center text-md-start pb-2 pb-lg-0 mb-0">
+          &copy; All rights reserved. Designed by Wyatt Johnson.
+        </p>
+        <p class="nav d-block fs-xs text-center text-md-start pb-2 pb-lg-0 mb-0 py-3">
+          Although this organization has members who are University of Virginia students and may have University employees associated or engaged in its activities and affairs, the organization is not a part of or an agency of the University. It is a separate and independent organization, which is responsible for and manages its own activities and affairs. The University does not direct, supervise or control the organization and is not responsible for the organization’s contracts, acts or omissions.
+        </p>
+      </div>
+    </footer>
+
+
+    <!-- Back to top button -->
+    <a href="#top" class="btn-scroll-top" data-scroll>
+      <span class="btn-scroll-top-tooltip text-muted fs-sm me-2">Top</span>
+      <i class="btn-scroll-top-icon bx bx-chevron-up"></i>
+    </a>
+
+
+    <!-- Vendor Scripts -->
+    <script src="assets/vendor/parallax-js/dist/parallax.min.js"></script>
+    <script src="assets/vendor/rellax/rellax.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/lightgallery/lightgallery.min.js"></script>
+    <script src="assets/vendor/lightgallery/plugins/video/lg-video.min.js"></script>
+
+    <!-- Main Theme Script -->
+    <script src="assets/js/theme.min.js"></script>
+  </body>
+</html>
